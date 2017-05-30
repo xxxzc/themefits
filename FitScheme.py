@@ -12,12 +12,19 @@ from os import path, remove
 # Created by aziz (SyncedSidebarbg)
 # Modified by xxxzc
 
+
 class MatchColorScheme(sublime_plugin.EventListener):
 
     def on_activated_async(self, view):
         global cache
+        if view.settings().get('theme') != "Fits.sublime-theme":
+            print("activate only use Fits.sublime-theme")
+            artifacts = path.join(sublime.packages_path(),
+                                  "User", "*.sublime-theme")
+            for f in glob.glob(artifacts):
+                remove(f)
+            return
         scheme_file = view.settings().get('color_scheme')
-
         # do nothing if it's a widget
         if view.settings().get('is_widget'):
             return
