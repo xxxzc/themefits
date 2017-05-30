@@ -1,5 +1,5 @@
 # Theme - Fits
-A sublime text3 theme based on [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg) that can fits many color schemes.
+A sublime text3 theme based on [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg) that can automatic fits many(almost all) color schemes.
 
 ### Preview
 
