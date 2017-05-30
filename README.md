@@ -3,7 +3,7 @@ A sublime text3 theme based on [SyncedSidebarBg](https://packagecontrol.io/packa
 
 ### Preview
 
-![preview](/home/xxx/Documents/Theme - Fits/Preview/preview.gif)
+![preview](Preview/preview.gif)
 
 Note that I use [ColorSchemeSelector](https://packagecontrol.io/packages/ColorSchemeSelector) to random select color scheme. (But it may encounter a bug that color scheme cannot be switched, in this case, you should close all tabs and reopen them)
 
