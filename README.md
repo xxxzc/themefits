@@ -5,15 +5,15 @@ A sublime text3 theme based on [SyncedSidebarBg](https://packagecontrol.io/packa
 
 ![preview](Preview/preview.gif)
 
-Note that I use [ColorSchemeSelector](https://packagecontrol.io/packages/ColorSchemeSelector) to random select color scheme. (But it may encounter a bug that color scheme cannot be switched, in this case, you should close all tabs and reopen them)
+Note that I use [ColorSchemeSelector](https://packagecontrol.io/packages/ColorSchemeSelector) to random select color scheme. (But random select may encounter a bug that color scheme cannot be switched, in this case, you should close all tabs and reopen them)
 
 ### Installation
 Using **Package Control**: search "Theme - Fits"
 
-Download from [Github](https://github.com/xxxzc/themefits): 
+or Download from [Github](https://github.com/xxxzc/themefits): 
 
-- open `Preferences -> Browse Packages...`.
-- create new folder named `Theme - Fits`.
+- open `Preferences -> Browse Packages...`
+- create new folder named `Theme - Fits`
 - download package and unzip into this folder
 
 ### Activation
