@@ -17,10 +17,12 @@ class MatchColorScheme(sublime_plugin.EventListener):
 
     def on_activated_async(self, view):
         global cache
+        if view.settings().get('theme') is None:
+            return
         if view.settings().get('theme') != "Fits.sublime-theme":
-            print("activate only use Fits.sublime-theme")
+            print("Theme-Fits will be activated only use Fits.sublime-theme")
             artifacts = path.join(sublime.packages_path(),
-                                  "User", "*.sublime-theme")
+                                  "User", "Fits.sublime-theme")
             for f in glob.glob(artifacts):
                 remove(f)
             return
@@ -28,7 +30,6 @@ class MatchColorScheme(sublime_plugin.EventListener):
         # do nothing if it's a widget
         if view.settings().get('is_widget'):
             return
-
         # do nothing if the sheme file is not available or the same as before
         if not scheme_file or scheme_file == cache.get('color_scheme'):
             return
