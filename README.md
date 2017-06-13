@@ -13,23 +13,33 @@ Note that I use [ColorSchemeSelector](https://packagecontrol.io/packages/ColorSc
 - Automatic change UI colors according to the color scheme you used
 - Automatic fits light, medium and dark color schemes
 - Side Bar will has uniform color icons，if you set **A File Icon** color to `#fff`, 
- 
-### Log
+
+### Change Log
+
+1.0.4:
+
+[improve] more colorized
+
+[add] some sep-line 
+
+[add] bold tab label
+
+[code] rewrite some python functions to enhance code readability and logicality
 
 1.0.3:
-Fixed theme can't be activated properly bug, which is caused by moving a file from one window to another window.
+[fix] A theme can't be activated properly bug, which is caused by moving a file from one window to another window.
 
 ### Install and Activate
 1. Using **Package Control**: search "Theme - Fits" \
-	or Download from [Github](https://github.com/xxxzc/themefits): 
-	- open `Preferences -> Browse Packages...`
-	- create new folder named `Theme - Fits`
-	- download package and unzip into this folder
+  or Download from [Github](https://github.com/xxxzc/themefits): 
+  - open `Preferences -> Browse Packages...`
+  - create new folder named `Theme - Fits`
+  - download package and unzip into this folder
 
 2. Add following code into `Preferences -> Settings - User`:
-	```json
-		"theme": "Fits.sublime-theme",
-	```
+  ```json
+  	"theme": "Fits.sublime-theme",
+  ```
 
 #### Issues
 
