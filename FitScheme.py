@@ -7,7 +7,8 @@ import codecs
 import json
 import plistlib
 import re
-
+import glob
+from os import remove
 # Created by aziz (SyncedSidebarbg)
 # Modified by xxxzc
 
@@ -20,7 +21,7 @@ class MatchColorScheme(sublime_plugin.EventListener):
                 view.settings().get('theme') is None:
             return
         if "Fits" not in view.settings().get('theme'):
-            print("[Theme-Fits] Activated only use Fits.sublime-theme")
+            # print("[Theme-Fits] Activated only use Fits.sublime-theme")
             return
 
         scheme_file = view.settings().get('color_scheme')
@@ -175,6 +176,17 @@ class MatchColorScheme(sublime_plugin.EventListener):
                 "layer1.tint": color(Mode.li)
             },
             {
+                "class": "panel_button_control",
+                "layer0.tint": color(Mode.ft),
+                "layer0.opacity": 0.75
+            },
+            {
+                "class": "panel_button_control",
+                "attributes": ["hover"],
+                "layer0.tint": color(Mode.ft),
+                "layer0.opacity": 0.75
+            },
+            {
                 "class": "label_control",
                 "color": color(Mode.ft, -50)
             },
@@ -289,19 +301,23 @@ class MatchColorScheme(sublime_plugin.EventListener):
             # icon set
             {
                 "class": "icon_folder",
-                "layer0.tint": color(Mode.ft)
+                "layer0.tint": color(Mode.ft),
+                "layer0.opacity": 0.75
             },
             {
                 "class": "icon_file_type",
-                "layer0.tint": color(Mode.ft)
+                "layer0.tint": color(Mode.ft),
+                "layer0.opacity": 0.75
             },
             {
                 "class": "icon_folder_loading",
-                "layer0.tint": color(Mode.ft)
+                "layer0.tint": color(Mode.ft),
+                "layer0.opacity": 0.5
             },
             {
                 "class": "icon_folder_dup",
-                "layer0.tint": color(Mode.ft)
+                "layer0.tint": color(Mode.ft),
+                "layer0.opacity": 1
             },
             {
                 "class": "icon_regex",
@@ -418,7 +434,8 @@ class MatchColorScheme(sublime_plugin.EventListener):
 
         json_str = json.dumps(template, sort_keys=True, indent=4, separators=(
             ',', ': ')).encode('raw_unicode_escape')
-        new_theme_file_path = sublime.packages_path() + "/User/" + \
+        global new_theme_file_path
+        new_theme_file_path  = sublime.packages_path() + "/User/" + \
             view.settings().get('theme')
         with codecs.open(new_theme_file_path, 'w', 'utf-8') as f:
             f.write(json_str.decode())
@@ -431,6 +448,3 @@ def plugin_loaded():
 
 def plugin_unloaded():
     return
-    # artifacts = path.join(sublime.packages_path(), "User", "*.sublime-theme")
-    # for f in glob.glob(artifacts):
-    #     remove(f)
