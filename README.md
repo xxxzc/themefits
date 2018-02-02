@@ -7,9 +7,9 @@ Wish u enjoy it!
 
 ### Preview
 
-![img](/Preview/mariana.png)
+![img](https://github.com/xxxzc/themefits/tree/master/Preview/mariana.png)
 
-![img](/Preview/preview.gif)
+![img](https://github.com/xxxzc/themefits/tree/master/Preview/preview.gif)
 
 ### Features
 
