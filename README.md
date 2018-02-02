@@ -7,6 +7,8 @@ Wish u enjoy it!
 
 ### Preview
 
+![img](/Preview/mariana.png)
+
 ![img](/Preview/preview.gif)
 
 ### Features
