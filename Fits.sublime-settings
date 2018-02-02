@@ -1,0 +1,39 @@
+{
+
+
+    /*
+        "passive": this theme will refresh only after a new file opened.
+        "active": this theme will refresh when another tab is selected or another color scheme is choosed.
+    */
+    "mode": "active",
+
+    /*
+        scope is a key word to determine the accent color.
+
+        You can open .tmTheme file to check which scope is avaliable.
+        For example:
+            <dict>
+                <key>scope</key>
+                <string>string</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#1D577D</string>
+                </dict>
+            </dict>
+        The key 'scope' has string 'string', so we can use 'string' as a key word, 
+        then this plugin will choose the following 'foreground' as accent color.
+        Since each color scheme has different 'foreground' color for same scope, 
+        choose different scope wii still obtain adaptability.
+    */
+    "scope": "function",
+
+    /*
+        You can set up accent color directly.
+        Format: "#abc" or "#abcdef"
+        
+        A few color scheme file can't be resolved properly, then you can set up 
+        this option to determine accent color compulsorily.
+    */
+    "accent": ""
+}

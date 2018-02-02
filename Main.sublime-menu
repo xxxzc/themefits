@@ -1,0 +1,23 @@
+[
+  {
+    "id": "preferences",
+    "children":
+    [
+      {
+        "id": "package-settings",
+        "caption": "Package Settings",
+        "children":
+        [
+          {
+            "caption": "Theme - Fits",
+            "command": "edit_settings",
+            "args": {
+              "base_file": "${packages}/Theme - Fits/Fits.sublime-settings",
+              "default": "{\n}"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
