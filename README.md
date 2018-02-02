@@ -1,7 +1,7 @@
 ﻿# Theme - Fits
 An adaptive flat theme based on [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg). 
 
-V1.1.0 maybe a final update. I spent two days rewriting and cleaning up code T T.
+I spent two days rewriting and cleaning up code T T. 
 
 Wish u enjoy it!
 
@@ -12,9 +12,10 @@ Wish u enjoy it!
 ### Features
 
 - Adaptive Flat UI
-- Accent Color got from color scheme
-- Adapt to most of color schemes
-- Customize color
+- Adapt to almost all color schemes
+- Immediate effect after you change color scheme
+- Accent Color got from current color scheme
+- Customize accent color
 
 ### Installation
 #### Download
@@ -49,7 +50,7 @@ Make icons being adaptive by adding following code into `Preferences -> Package 
 ```
 #### 2. Color Settings
 
-Although this theme can handle most of color schemes, there are still a few can't be recognized. In case, you can configure colors by yourself. These color settings have higher priority. You can get detailed information in the setting file. Open `Preferences -> Package Settings -> Theme - Fits`:
+Although this theme can handle most of color schemes, there are still a few can't be recognized. In case, you can configure colors by yourself. You can get detailed information in the setting file. Open `Preferences -> Package Settings -> Theme - Fits`:
 
 ```json
     // scope is a key word to determine the accent color.
@@ -66,6 +67,12 @@ If your screen size is larger than 100% (like my win laptop is 2560x1440 and I u
 You can edit `Fits.sublime-theme` file: replace all `.png` with `@2x.png`, it may works.
 
 ### Changelog
+
+1.1.1:
+
+[FIX] solve the problem that some styles can't load. Now, this theme can adapt to almost all color schemes
+
+[IMPROVE] display content under dark color scheme
 
 1.1.0:
 

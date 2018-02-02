@@ -346,7 +346,7 @@
     /* input */
     {
         "class": "text_line_control",
-        "layer0.opacity": 1.0,
+        "layer0.opacity": 1,
         "layer0.inner_margin": 4,
         "content_margin": 4
     },
@@ -461,7 +461,7 @@
     {
         "class": "icon_button_control",
         "attributes": ["hover"],
-        "layer0.opacity": 1.0
+        "layer0.opacity": { "target": 0.6, "speed": 3.0, "interpolation": "smoothstep" }
     },
     {
         "class": "icon_regex",

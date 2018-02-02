@@ -51,7 +51,7 @@ class Adapter(sublime_plugin.EventListener):
         plist_file = plistlib.readPlistFromBytes(sublime.load_resource(scheme_file).encode('utf-8'))
 
         global_settings = [i["settings"] for i in plist_file[
-            "settings"] if i["settings"].get("caret") or i["settings"].get("lineHignLight")]
+            "settings"] if i.get('settings', False) and i["settings"].get("caret")]
         color_settings = global_settings and global_settings[0]
         cache['background'] = color_settings.get('background', "#888").lower()
         cache['foreground'] = color_settings.get('foreground', "#888").lower()
@@ -99,16 +99,17 @@ class Adapter(sublime_plugin.EventListener):
                 if dark < 30:
                     if mode == FG:
                         op = 30 - op
-                        op *= 2
+                        op *= 3
                     elif mode == BG:
-                        op /= 2
+                        op /= 1.5
                 mask = white
                 if mode == BG and dark > 30: 
                     mask = black
                 if mode == FG and light > 150 and dark > 30:
                     mask = black
-                if rev :
-                    mask = black if mask == white else white
+                if rev: 
+                    print(dark)
+                    mask = white if dark < 130 else black
             else:
                 mask = hl
                 if op == 0: op = 100
@@ -116,8 +117,8 @@ class Adapter(sublime_plugin.EventListener):
             return [color] + mask + [op/100]
 
 
-        sep_line_color = color(BG, 15)
-        panel_btn_color = color(BG, 5, True)
+        sep_line_color = color(BG, 20)
+        panel_btn_color = color(BG, 3, True)
         bar_mask_color = color(BG, 10)
         foreground = color(FG)
         background = color()
@@ -180,7 +181,7 @@ class Adapter(sublime_plugin.EventListener):
                 "class": "tab_label",
                 "parents": [{"class": "tab_control",
                              "attributes": ["selected"]}],
-                "fg": color(HL, 15)
+                "fg": color(HL, 20)
             },
             # close button
             {
@@ -214,11 +215,11 @@ class Adapter(sublime_plugin.EventListener):
             },
             {
                 "class": "quick_panel_row",
-                "layer0.tint": background
+                "layer0.tint": panel_btn_color
             },
             {
                 "class": "mini_quick_panel_row",
-                "layer0.tint": background
+                "layer0.tint": panel_btn_color
             },
             {
                 "class": "quick_panel_label",
@@ -229,8 +230,8 @@ class Adapter(sublime_plugin.EventListener):
             },
             {
                 "class": "quick_panel_path_label",
-                "fg": foreground,
-                "match_fg": foreground,
+                "fg": color(FG, 20),
+                "match_fg": color(FG, 20),
                 "selected_fg": foreground,
                 "selected_match_fg": foreground
             },
