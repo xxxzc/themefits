@@ -7,7 +7,7 @@ Wish u enjoy it!
 
 ### Preview
 
-![img](/Preview/preview.gif)
+![img](/Preview/preview.gif =400x400)
 
 ### Features
 
