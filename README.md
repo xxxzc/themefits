@@ -7,9 +7,9 @@ Wish u enjoy it!
 
 ### Preview
 
-![img](https://github.com/xxxzc/themefits/blob/master/Preview/mariana.png)
+![img](https://raw.githubusercontent.com/xxxzc/themefits/master/Preview/mariana.png)
 
-![img](https://github.com/xxxzc/themefits/blob/master/Preview/preview.gif)
+![img](https://raw.githubusercontent.com/xxxzc/themefits/master/Preview/preview.gif)
 
 ### Features
 
@@ -69,6 +69,10 @@ If your screen size is larger than 100% (like my win laptop is 2560x1440 and I u
 You can edit `Fits.sublime-theme` file: replace all `.png` with `@2x.png`, it may works.
 
 ### Changelog
+
+1.1.2：
+
+[FIX] clear debug message
 
 1.1.1:
 

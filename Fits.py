@@ -108,7 +108,6 @@ class Adapter(sublime_plugin.EventListener):
                 if mode == FG and light > 150 and dark > 30:
                     mask = black
                 if rev: 
-                    print(dark)
                     mask = white if dark < 130 else black
             else:
                 mask = hl
