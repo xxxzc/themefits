@@ -1,8 +1,6 @@
 ﻿# Theme - Fits
 An adaptive flat theme based on [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg). 
 
-I spent two days rewriting and cleaning up code T T. 
-
 Wish u enjoy it!
 
 ### Preview
@@ -16,8 +14,8 @@ Wish u enjoy it!
 - Adaptive Flat UI
 - Adapt to almost all color schemes
 - Immediate effect after you change color scheme
-- Accent Color got from current color scheme
-- Customize accent color
+- Accent color got from current color scheme
+- Customizable accent color
 
 ### Installation
 #### Download
@@ -38,9 +36,7 @@ or Add following code into `Preferences -> Settings - User`:
 
 ### Customization
 
-#### 1. File Icons
-**File Icons**
-
+#### File Icons
 Please install [A File Icon](https://packagecontrol.io/packages/A%20File%20Icon) to get more file-specific icons.
 
 **Adaptation**
@@ -50,25 +46,38 @@ Make icons being adaptive by adding following code into `Preferences -> Package 
 ```json
   "color": "#fff",
 ```
-#### 2. Color Settings
+#### Color Settings
 
-Although this theme can handle most of color schemes, there are still a few can't be recognized. In case, you can configure colors by yourself. You can get detailed information in the setting file. Open `Preferences -> Package Settings -> Theme - Fits`:
+Although this theme can handle most of color schemes, there are still a few can't be resolved. In case, you can configure colors by yourself. You can get detailed information in  `Preferences -> Package Settings -> Theme - Fits`:
 
 ```json
-    // scope is a key word to determine the accent color.
-    "scope": "function",
-
-    // Set up an accent color directly.
-    "accent": "#abcdef"
+// scope is a key word to determine the accent color.
+"scope": "function",
+// Set up an accent olor directly.
+"accent": "#abcdef"
 ```
 
-#### 3. Screen Resolution
+#### Modify Theme
+
+1. install [PackageResourceViewer](https://packagecontrol.io/packages/PackageResourceViewer)
+2. open `quick panel`, search `open source`, enter
+3. search `theme - fits`, enter
+4. select `Fits.sublime-theme`, it will open this file
+5. now you can modify it by yourself.
+
+You can check the official docs -> [Documentation Themes](http://www.sublimetext.com/docs/3/themes.html)
+
+#### Screen Resolution
 
 If your screen size is larger than 100% (like my win laptop is 2560x1440 and I use 200%)
 
 You can edit `Fits.sublime-theme` file: replace all `.png` with `@2x.png`, it may works.
 
 ### Changelog
+
+1.1.3:
+
+[FIX] font display
 
 1.1.2：
 
@@ -115,3 +124,7 @@ Based on [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg) b
 if you have any idea or found bug, please let me know:
 - Github: [Issues](https://github.com/xxxzc/themefits/issues)
 - Gmail: xxxzcwork@gmail.com
+
+
+
+Sorry for my poor English.

@@ -10,9 +10,9 @@
     {
         "class": "sidebar_tree",
         "layer0.opacity": 1,
-        "row_padding": [8, 4],
+        "row_padding": [6, 2],
         "indent": 10,
-        "indent_offset": 10,
+        "indent_offset": 8,
         "indent_top_level": false,
         "dark_content": true,
         "spacer_rows": false
@@ -40,12 +40,11 @@
     { // headline
         "class": "sidebar_heading",
         "font.size": 13,
-        "font.bold": true
+        "font.bold": false
     },
     {
-        "class": "sidebar_labexl",
+        "class": "sidebar_label",
         "font.size": 12,
-        "font.face": "",
         "font.bold": false
     },
     {
@@ -61,7 +60,7 @@
     { // open file close button
         "class": "close_button",
         "layer0.draw_center": false,
-        "layer0.inner_margin": [3, 0, 0, 0],
+        "layer0.inner_margin": [6, 0, 0, 0],
         "layer0.opacity": 0,
         "content_margin": [8, 8]
     },
@@ -102,7 +101,6 @@
     },
     { // tab label
         "class": "tab_label",
-        "font.face": "Aria",
         "font.size": 12,
         "font.italic": false,
         "font.bold": false
@@ -384,13 +382,13 @@
     {
         "class": "panel_button_control",
         "layer0.texture": "Theme - Default/common/dark/panels_button.png",
-        "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity": { "target": 0.9, "speed": 4.0, "interpolation": "smoothstep" },
         "content_margin": [12, 11]
     },
     {
         "class": "panel_button_control",
         "attributes": ["hover"],
-        "layer0.opacity": { "target": 0.3, "speed": 4.0, "interpolation": "smoothstep" },
+        "layer0.opacity": { "target": 1.0, "speed": 4.0, "interpolation": "smoothstep" },
     },
     {
         "class": "status_container",
