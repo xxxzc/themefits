@@ -47,6 +47,10 @@ class Adapter(sublime_plugin.EventListener):
                 (settingAccent == "" and cache['accent'] == cache['theme_accent'])):
             return
 
+        if '.sublime-color-scheme' in scheme_file:
+            print('Sorry, this theme does not support default color scheme(.sublime-color-scheme) like Monokai, Celeste ... ')
+            return
+
         # read scheme file to get current color settings
         plist_file = plistlib.readPlistFromBytes(sublime.load_resource(scheme_file).encode('utf-8'))
 

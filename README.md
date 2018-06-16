@@ -1,7 +1,7 @@
 ﻿# Theme - Fits
-An adaptive flat theme based on [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg). 
+#### Notice! This theme can't support built-in color schemes(like Celeste, Monokai) currently since file format has been changed, I will fix it asap.
 
-Wish u enjoy it!
+**An adaptive flat theme based on [SyncedSidebarBg](https://packagecontrol.io/packages/SyncedSidebarBg).** 
 
 ### Preview
 
@@ -53,7 +53,7 @@ Although this theme can handle most of color schemes, there are still a few can'
 ```json
 // scope is a key word to determine the accent color.
 "scope": "function",
-// Set up an accent olor directly.
+// Set up an accent color directly.
 "accent": "#abcdef"
 ```
 
